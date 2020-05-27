@@ -1,0 +1,4 @@
+Jim Smith|123 Any Street|Boston|US|02134
+Jane Lee|248 Another St.|Boston|US|02130
+Dong Lee|248 one more St.|Wuhan|CH|021323
+Jackie chan|238 Another St.|Chinatown|US|02131
