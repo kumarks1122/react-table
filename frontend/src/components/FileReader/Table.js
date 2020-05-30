@@ -1,14 +1,14 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 
-function Table({
-  records,
-  rowCount
-}) {
+function Table() {
+  const { records } = useSelector(state => state.reader)
+
   return (
-    <div className="App">
-      <table>
+    <div className="container">
+      <table className="table">
         {
-          records.slice(0, rowCount).map((rec, recIndex) => (<tr key={recIndex}>
+          records.map((rec, recIndex) => (<tr key={recIndex}>
             {
               rec.map((value, index) => (<td key={index}>
                 {value}

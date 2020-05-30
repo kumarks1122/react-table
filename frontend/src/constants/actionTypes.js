@@ -1,0 +1,3 @@
+export const RECORDS_ADDED = 'RECORDS_ADDED';
+export const FILE_ID_CHANGED = 'FILE_ID_CHANGED';
+export const READER_PAGE_LOAD = 'READER_PAGE_LOAD';

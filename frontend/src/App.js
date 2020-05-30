@@ -1,14 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import FileReader from './FileReader';
+import { Provider } from 'react-redux'
+
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+
+import store from './store'
+import FileReader from './components/FileReader';
 
 function App() {
   return (
-    <div className="App container">
-      <FileReader/>
-    </div>
+    <Provider store={store}>
+      <div className="App container">
+        <FileReader/>
+      </div>
+    </Provider>
   );
 }
 
